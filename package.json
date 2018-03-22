@@ -1,0 +1,27 @@
+{
+  "name": "smarthouse",
+  "version": "1.0.0",
+  "description": "Responsive theme via SCSS forsimple e-commerce site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avbelov73/sh.git"
+  },
+  "author": "Andrey Belov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avbelov73/sh/issues"
+  },
+  "homepage": "https://github.com/avbelov73/sh#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^3.2.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^5.0.0"
+  }
+}
