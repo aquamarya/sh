@@ -1,0 +1,31 @@
+@mixin f-base {
+    font-family: 'Libre Franklin', Roboto, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.714285;
+    font-style: normal;
+}
+
+@mixin clearfix {
+    &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        clear: both;
+    }
+}
+
+//icons
+
+@mixin vk {
+    &:after {
+        font-family: $f-icons;
+        content: '\f189';
+    }
+}
+@mixin fb {
+    &:after {
+        font-family: $f-icons;
+        content: '\f082';
+    }
+}

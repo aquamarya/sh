@@ -5,7 +5,7 @@ var notify = require('gulp-notify');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 var path = {
-    css: ['scss/style.scss']
+    css: ['scss/**/*.scss']
 };
 gulp.task('sass', function(){
     gulp.src('scss/style.scss')
@@ -17,13 +17,11 @@ gulp.task('sass', function(){
 });
 gulp.task('browserSync', function() {
     browserSync({
-        // server: {
-        //     baseDir: ""
-        // },
-        proxy: {
-            target: "http://sh.local"
-        },
-        notify: true
+        proxy: "sh.local:",
+        host: 'sh.local',
+        open: 'external',
+        port: 80,
+        notify: false
     });
 });
 gulp.task('watcher',function() {
