@@ -27,4 +27,4 @@ gulp.task('browserSync', function() {
 gulp.task('watcher',function() {
     gulp.watch(path.css, ['sass']);
 });
-gulp.task('default', ['watcher', 'browserSync']);
+gulp.task('default', ['watcher', 'browserSync']); 
