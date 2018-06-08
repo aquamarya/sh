@@ -11,34 +11,22 @@
 ?>
 
 	</div><!-- #main -->
-
-	<footer id="footer" class="footer">
-        <div class="footer-wrapper container">
-            <?php
-                $footerMenuArgs = [
-                    'container' => 'ul',
-                    'menu_class' => 'footer-menu',
-                    'menu_id' => 'footer-menu',
-                    'depth' => 1
-                ];
-                wp_nav_menu($footerMenuArgs);
-            ?>
-            <div class="footer-social">
-                <span class="footer-social__title">Мы в социальных сетях: </span>
-                <ul class="footer-social__list">
-                    <li class="footer-social__item"><a href="#" class="footer-social__link"><i class="fab fa-vk"></i></a></li>
-                    <li class="footer-social__item"><a href="#" class="footer-social__link"><i class="fab fa-facebook-f"></i></a></li>
-                    <li class="footer-social__item"><a href="#" class="footer-social__link"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-            </div>
-            <?php
-                $createY = 2018;
-                $currentY = date('Y');
-                $createY == $currentY ? $copyY = $createY : $copyY = $createY . ' - ' . $currentY
-            ?>
-            <div class="footer-copy">&copy; <?php echo $copyY?>, all right reserved</div>
+<footer>
+    <?php
+    $createY = 2018;
+    $currentY = date('Y');
+    $createY == $currentY ? $copyY = $createY : $copyY = $createY . ' - ' . $currentY
+    ?>
+    <div class="footer-col"><span>&copy; <?php echo $copyY?>, all right reserved</span></div>
+    <div class="footer-col">
+        <div class="social-bar-wrap">
+            <a title="Facebook" href="" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a title="Twitter" href="" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a title="Google+" href="" target="_blank"><i class="fa fa-google+"></i></a>
+            <a title="Instagram" href="" target="_blank"><i class="fa fa-instagram"></i></a>
         </div>
-	</footer>
+    </div>
+</footer>
 </div>
 
 <?php wp_footer(); ?>
