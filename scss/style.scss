@@ -12,6 +12,7 @@ Text Domain: smarthouse
 @import "mixins";
 @import "global";
 @import "core/core";
+@import "sh/sass/fonts.sass"
 body {
 }
 *, *:after, *:before {
@@ -160,7 +161,7 @@ footer {
 }
 @media (max-width: $bp-xsmall - 1) {
   body {
-    background: red;
+    background: green;
   }
   nav {
     text-align: center;
