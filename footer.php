@@ -24,6 +24,7 @@
             <a title="Twitter" href="" target="_blank"><i class="fa fa-twitter"></i></a>
             <a title="Google+" href="" target="_blank"><i class="fa fa-google+"></i></a>
             <a title="Instagram" href="" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a title="VK" href="" target="_blank"><i class="fa fa-vk"></i></a>
         </div>
     </div>
 </footer>
