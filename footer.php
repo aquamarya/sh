@@ -10,7 +10,7 @@
  */
 ?>
 
-	</div><!-- #main -->
+
 <footer>
     <?php
     $createY = 2018;
@@ -32,5 +32,4 @@
 
 <?php wp_footer(); ?>
 
-</body>
-</html>
+
