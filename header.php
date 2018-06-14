@@ -139,6 +139,19 @@ if ( is_singular() && get_option( 'thread_comments' ) ) {
 				<?php get_search_form(); ?>
 			<?php endif; ?>
 
+        <div class="container">
+            <div class="nav-toggle"><span></span></div>
+            <ul id="menu">
+                <li><a href="">HOME</a></li>
+                <li><a href="">FEATURES</a></li>
+                <li><a href="">PAGES</a></li>
+                <li><a href="">COMMUNITY</a></li>
+                <li><a href="">EVENTS</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">SHOP</a></li>
+                <li><a href="">ELEMENTS</a></li>
+            </ul>
+        </div>
 			<nav id="access" role="navigation">
 				<h3 class="assistive-text"><?php _e( 'Main menu', 'twentyeleven' ); ?></h3>
 				<?php /* Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff. */ ?>
@@ -150,18 +163,7 @@ if ( is_singular() && get_option( 'thread_comments' ) ) {
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 			</nav><!-- #access -->
 
-            <div class="container">
-              <ul id="menu">
-                  <li><a href="">HOME</a></li>
-                  <li><a href="">FEATURES</a></li>
-                  <li><a href="">PAGES</a></li>
-                  <li><a href="">COMMUNITY</a></li>
-                  <li><a href="">EVENTS</a></li>
-                  <li><a href="">BLOG</a></li>
-                  <li><a href="">SHOP</a></li>
-                  <li><a href="">ELEMENTS</a></li>
-              </ul>
-            </div>
+
     </header><!-- #branding -->
 
 

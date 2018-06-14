@@ -10,8 +10,9 @@
  */
 ?>
 
-
+</div>
 <footer>
+  <div class="container">
     <?php
     $createY = 2018;
     $currentY = date('Y');
@@ -27,8 +28,9 @@
             <a title="VK" href="" target="_blank"><i class="fa fa-vk"></i></a>
         </div>
     </div>
+  </div>
 </footer>
-</div>
+
 
 <?php wp_footer(); ?>
 

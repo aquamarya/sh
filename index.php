@@ -47,5 +47,22 @@ get_header(); ?>
 			</div><!-- #content -->
 		</div><!-- #primary -->
 
+        <div class="main">
+            <div class="container">
+                 <div class="banner">
+                    <img src="images/foto1.svg">
+                     <div id="banner-content">
+                <h1>Header1</h1>
+                <h2>Header2</h2>
+                <a class="btn1" href="#">Button1</a>
+                <a class="btn2" href="#">Button2</a>
+                     </div>
+                 </div>
+
+                <h2>Header2</h2>
+                <p>Text text text</p>
+            </div>
+        </div>
+
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
