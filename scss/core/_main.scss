@@ -1,0 +1,188 @@
+/*
+Theme Name: SmartHouse
+Theme URI: https://github.com/avbelov73/sh
+Description: Theme for e-shop system and component for a smart house
+Author: avbelov73
+Author URI: https://github.com/avbelov73
+Version: 0.1
+Text Domain: smarthouse
+*/
+
+
+*, *:after, *:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: .5s ease-in-out;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1, h2, h3, h4 ,h5, h6{
+  font-family: $f-base;
+  font-weight: normal;
+  text-align: center;
+ }
+
+h2 {
+  max-font-size: 3em;
+  color: $c-white;
+}
+
+p {
+  text-align: center;
+}
+body {
+  font-family: $f-base;
+  font-size: 1em;
+  line-height: 1;
+  color: $c-gray;
+  background: $c-white;
+}
+header:after, .container:after, footer:after, li:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container {
+  margin: 0 auto;
+  max-width: 100%;
+  display: block;
+}
+
+@media all and (max-width: $bp-xsmall - 1) {
+  body {
+    background: $c-primary;
+  }
+  nav {
+    text-align: center;
+  }
+
+  .logo {
+    float: none;
+    margin-bottom: 15px;
+  }
+
+  #menu {
+    top: 24.58333333333%;
+  }
+  .btn1 {
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    width: 40%;
+    height: 12%;
+    border-radius: 1px;
+    font-family: $f-base;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    background: $c-primary;
+    color: $c-white;
+    font-weight: 300;
+    transition: .5s;
+    &:hover {
+      background: $c-white;
+      color: $c-primary;
+    }
+  }
+
+  .btn2 {
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    width: 40%;
+    height: 12%;
+    border-radius: 1px;
+    font-family: $f-base;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    background: $c-black;
+    color: $c-white;
+    font-weight: 300;
+    transition: .5s;
+    &:hover {
+      background: $c-white;
+      color: $c-black;
+    }
+  }
+}
+
+  @media all and (max-width: $bp-xlarge - 1) {
+    .banner {
+      display: block;
+      position: absolute;
+      height: 58%;
+      width: 100%;
+      text-align: center;
+      &_content {
+        position: relative;
+        top: 20%;
+        width: 60%;
+        text-align: center;
+      }
+
+    }
+
+    .btn1 {
+      text-decoration: none;
+      outline: none;
+      display: inline-block;
+      width: 10%;
+      height: 3%;
+      border-radius: 1px;
+      font-family: $f-base;
+      font-size: 11px;
+      text-transform: uppercase;
+      text-align: center;
+      background: $c-primary;
+      color: $c-white;
+      font-weight: 300;
+      transition: .5s;
+      &:hover {
+        background: $c-white;
+        color: $c-primary;
+      }
+    }
+    .btn2 {
+      text-decoration: none;
+      outline: none;
+      display: inline-block;
+      width: 10%;
+      height: 3%;
+      border-radius: 1px;
+      font-family: $f-base;
+      font-size: 11px;
+      text-transform: uppercase;
+      text-align: center;
+      background: $c-black;
+      color: $c-white;
+      font-weight: 300;
+      transition: .5s;
+      &:hover {
+        background: $c-white;
+        color: $c-black;
+      }
+    }
+
+    .box {
+      background-color: $c-white;
+    }
+    p {
+      max-width: 46%;
+
+    }
+
+  }
